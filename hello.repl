@@ -1,0 +1,9 @@
+(begin-tx)
+
+(load "hello.pact")
+
+(use hellomodule)
+
+(expect "Say hello to Davy" "good morning, Davy" (sayHi "Davy"))
+
+(commit-tx)
